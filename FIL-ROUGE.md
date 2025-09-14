@@ -1,4 +1,4 @@
-# Spécification détaillée – Projet fil rouge « SmartMarket »
+# Projet fil rouge « SmartMarket »
 
 ## 1) Périmètre fonctionnel obligatoire
 
@@ -58,7 +58,7 @@
 
 # Barème d’évaluation — Projet fil rouge (total **/100**, convertible **/20** en divisant par 5)
 
-> Chaque critère précise les **preuves attendues** et l’échelle d’appréciation. Un **critère bloquant** (⚠︎) invalide la soutenance s’il n’est pas respecté, même si le score arithmétique est suffisant.
+> Chaque critère précise les **preuves attendues** et l’échelle d’appréciation. Un **critère bloquant** () invalide la soutenance s’il n’est pas respecté, même si le score arithmétique est suffisant.
 
 ## 1) Architecture & Déploiement Docker (Nginx/Gunicorn, images, Compose) — **10 pts**
 
@@ -68,27 +68,27 @@
   * 9–10 : images non-root, config WebSockets Nginx, process de déploiement documenté et reproductible.
   * 7–8 : images séparées et fonctionnelles, quelques lacunes mineures.
   * 5–6 : mono-image ou procédures manuelles non fiabilisées.
-  * ≤4 : déploiement non fonctionnel. **⚠︎**
+  * ≤4 : déploiement non fonctionnel. 
 
 ## 2) Catalogue (modèles, admin, performance basique) — **10 pts**
 
 * **Preuves** : contraintes (unicité, prix ≥ 0), index utiles, admin avec filtres/recherche/actions, optimisation anti-N+1 (`select_related`).
-* **Échelle** : 9–10 robuste/ergonomique ; 7–8 correct ; 5–6 lacunes ; ≤4 incohérences de données. **⚠︎** si contraintes manquantes.
+* **Échelle** : 9–10 robuste/ergonomique ; 7–8 correct ; 5–6 lacunes ; ≤4 incohérences de données.  si contraintes manquantes.
 
 ## 3) Comptes & RBAC — **10 pts**
 
 * **Preuves** : rôles groupés, permissions DRF, accès objet-niveau pour les commandes.
-* **Échelle** : 9–10 strict et documenté ; 7–8 correct ; 5–6 trous d’accès ; ≤4 RBAC inopérant. **⚠︎**
+* **Échelle** : 9–10 strict et documenté ; 7–8 correct ; 5–6 trous d’accès ; ≤4 RBAC inopérant. 
 
 ## 4) Commandes — **10 pts**
 
 * **Preuves** : création/lecture sécurisées ; séparation des vues client/admin ; validations minimales.
-* **Échelle** : 9–10 complet ; 7–8 fonctionnel ; 5–6 lacunes ; ≤4 flux cassé. **⚠︎**
+* **Échelle** : 9–10 complet ; 7–8 fonctionnel ; 5–6 lacunes ; ≤4 flux cassé. 
 
 ## 5) API REST & OpenAPI — **10 pts**
 
 * **Preuves** : `/api/v1/...`, pagination, filtres, throttling, schéma OpenAPI + UI.
-* **Échelle** : 9–10 conforme et documentée ; 7–8 mineures ; 5–6 docs incomplètes ; ≤4 API non testable. **⚠︎**
+* **Échelle** : 9–10 conforme et documentée ; 7–8 mineures ; 5–6 docs incomplètes ; ≤4 API non testable. 
 
 ## 6) Recommandations basiques — **10 pts**
 
@@ -103,12 +103,12 @@
 ## 8) Assistant RAG — **10 pts**
 
 * **Preuves** : corpus interne, réponses **sourcées**, refus si hors corpus, journalisation (trace minimale).
-* **Échelle** : 9–10 garde-fous et traçabilité ; 7–8 correct ; 5–6 fragile ; ≤4 non livrable. **⚠︎** si hallucinations sans sources.
+* **Échelle** : 9–10 garde-fous et traçabilité ; 7–8 correct ; 5–6 fragile ; ≤4 non livrable.  si hallucinations sans sources.
 
 ## 9) Asynchronisme Celery & Notifications e-mail — **10 pts**
 
 * **Preuves** : worker + beat, tâches planifiées (reco/embeddings), envoi d’e-mail de commande, retries/backoff, idempotence.
-* **Échelle** : 9–10 robuste ; 7–8 opérationnel ; 5–6 lacunes (pas de retries) ; ≤4 inopérant. **⚠︎**
+* **Échelle** : 9–10 robuste ; 7–8 opérationnel ; 5–6 lacunes (pas de retries) ; ≤4 inopérant. 
 
 ## 10) Temps réel (Channels) — **10 pts**
 
@@ -125,12 +125,12 @@
   * 3 : 35–49 % ;
   * 1–2 : <35 % ;
   * 0 : tests non exécutables.
-* **⚠︎** si aucun test d’API critique (auth/permissions/RGPD).
+*  si aucun test d’API critique (auth/permissions/RGPD).
 
 ## 12) RGPD & Sécurité opérationnelle — **5 pts**
 
 * **Preuves** : mentions dans README, **export/suppression** opérants, anonymisation des démos, secrets hors dépôt, `DEBUG=False` en prod.
-* **Échelle** : 5 complet ; 3–4 avec lacunes mineures ; 1–2 incomplet ; 0 absent. **⚠︎** si export/suppression non fonctionnels.
+* **Échelle** : 5 complet ; 3–4 avec lacunes mineures ; 1–2 incomplet ; 0 absent.  si export/suppression non fonctionnels.
 
 ## 13) Documentation & Schéma d’architecture & Makefile — **3 pts**
 
