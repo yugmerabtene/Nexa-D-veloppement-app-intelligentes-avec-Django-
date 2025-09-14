@@ -239,6 +239,3 @@ Fournir une **API REST documentée** pour les ressources **Product**, **Category
 5. Générer et ouvrir la documentation OpenAPI ; comparer les exemples aux réponses réelles.
 6. Lancer les tests, contrôler la couverture, réaliser les trois captures demandées, préparer l’archive.
 
----
-
-Souhaitez-vous ensuite les **blocs de fichiers d’exemples** (sans modifier la structure du cours) pour accélérer la mise en œuvre ?
