@@ -1,12 +1,5 @@
 # Syllabus – Développement d’applications web intelligentes avec Django
 
-## Présentation du cours
-
-**Durée recommandée :** 4 jours (≈ 28 h) — alternant théorie le matin, TP l’après‑midi.
-**Pédagogie :** « learn‑by‑building » avec projet fil rouge, revues de code, tests et mini‑audits sécurité.
-
----
-
 ## Prérequis
 
 * Bases de Python (fonctions, classes, virtualenv/poetry, pip).
