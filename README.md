@@ -9,7 +9,6 @@
 
 **Packages/Services utilisés** (selon ateliers) : Django 5.x, Django REST Framework, PostgreSQL, Redis, Celery, Channels, Pydantic, pytest, scikit‑learn, pandas, numpy, sentence-transformers/embeddings (locale), FAISS/chroma (optionnel), OAuth2/OIDC (Keycloak/Auth0 ou social auth), API LLM (fournisseur au choix), OpenAPI/Swagger, Nginx, Gunicorn, Docker Compose.
 
----<
 
 ## Objectifs pédagogiques
 
