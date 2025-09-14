@@ -9,7 +9,7 @@
 
 **Packages/Services utilisés** (selon ateliers) : Django 5.x, Django REST Framework, PostgreSQL, Redis, Celery, Channels, Pydantic, pytest, scikit‑learn, pandas, numpy, sentence-transformers/embeddings (locale), FAISS/chroma (optionnel), OAuth2/OIDC (Keycloak/Auth0 ou social auth), API LLM (fournisseur au choix), OpenAPI/Swagger, Nginx, Gunicorn, Docker Compose.
 
----
+---<
 
 ## Objectifs pédagogiques
 
@@ -120,17 +120,8 @@
 * Couverture tests ≥ 60 % (cible), lints clean, `README.md` clair.
 * `.env.example`, secrets non commités, user admin par script, données de démo.
 * Mesures RGPD : mentions, export/suppression, logs, anonymisation de démo.
-* Schéma d’architecture ASCII + explication des flux.
+* Schéma d’architecture et explication des flux.
 * Script `make dev` / `make up` / `make test` / `make seed`.
-
-**Barème indicatif (50 pts)**
-
-* Architecture & code propre (10)
-* API DRF & sécurité (10)
-* Intelligence (recs + RAG) (12)
-* Asynchrone/temps réel (8)
-* CI/CD + déploiement (6)
-* Documentation & RGPD (4)
 
 ---
 
