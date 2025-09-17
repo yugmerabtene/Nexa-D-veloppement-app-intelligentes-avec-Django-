@@ -1,21 +1,4 @@
-# 1. Rappel théorique
-
-## 1.1 TF (Term Frequency)
-
-Le TF mesure l’importance d’un mot **dans un document particulier**.
-Formule (version relative) :
-
-$$
-TF(t,d) = \frac{\#(t \ \text{dans } d)}{\text{nombre total de mots dans } d}
-$$
-
-Exemple :
-Doc = `"stock market rises today"`, 4 mots.
-Chaque mot apparaît une fois, donc :
-
-$$
-TF(stock,d) = TF(market,d) = TF(rises,d) = TF(today,d) = \frac{1}{4} = 0.25
-$$
+<img width="1039" height="518" alt="image" src="https://github.com/user-attachments/assets/145149c2-c289-4330-a908-8a75dd4ccd98" />
 
 ---
 
