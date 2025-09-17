@@ -98,7 +98,7 @@ $$
 
 ---
 
-# 3. TP en Python
+# 3. Exo en Python
 
 Objectif : Construire un petit classifieur de sentiment basé sur TF-IDF + Régression logistique.
 
