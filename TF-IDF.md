@@ -92,4 +92,3 @@ $$
 
 
 
-Veux-tu que je prépare un **tableau récapitulatif complet TF, IDF, TF-IDF** pour tous les mots et les 3 documents, afin que tu voies tout le corpus sous forme matricielle (comme le fait scikit-learn) ?
