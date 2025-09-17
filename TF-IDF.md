@@ -1,7 +1,7 @@
 #  Formule
 
 $$
-TF\!-\!IDF(t, d) = TF(t, d) \times IDF(t)
+TF-IDF(t, d) = TF(t, d) \times IDF(t)
 $$
 
 * **$t$** = un **terme** (mot) du vocabulaire
@@ -64,7 +64,7 @@ $$
 ## Étape 3 : Calcul de TF-IDF(t,d₁)
 
 $$
-TF\!-\!IDF(t, d₁) = TF(t,d₁) \times IDF(t)
+TF-IDF(t, d₁) = TF(t,d₁) \times IDF(t)
 $$
 
 * “stock” : $0.25 \times 1.099 = 0.275$
